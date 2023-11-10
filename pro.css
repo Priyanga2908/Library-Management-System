@@ -1,0 +1,268 @@
+/*html,body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font: 90% sans-serif;
+    text-align: center;
+}
+.heading{
+  background-color: bisque;
+}
+h1{
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    padding-left: 10px;
+  }
+  .contai
+  {
+    height: auto;
+    width: 700px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .wrap
+  {
+    float: right;
+    width: 500px;
+  }
+  .wrap p
+  {
+    line-height: 1.4;
+    text-align: justify;
+  }
+  .navi
+  {
+    float: left;
+    height: 600px;
+    width: 200px;
+    background-color: antiquewhite;
+  }
+  .navi ul{
+    margin-left: 10px;
+    list-style-type:square;
+  }
+  .navi li{
+    margin-bottom: 5px;
+  }
+  .foot
+  {
+    clear: both; /*removes left and right float*/
+   /* width: 100%;
+    background-color: antiquewhite;
+  }
+  .foot p{
+    margin: 0;
+    padding: 5px 10px;
+  }
+a{
+    padding: 5px;
+    text-decoration: none; /*removes link line*/
+   /* color: black;
+}
+.adh
+{
+  text-align: center;
+}
+a:hover{
+   color: blue;
+}
+p{
+    margin:  20px 20px;
+}
+.center 
+{
+  height: auto;
+  width: 300px;
+  margin-left: 100px;
+}
+label,input,button,select,textarea{
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+input,select,textarea
+{
+  width: 100%;
+}
+.error
+{
+  color: red;
+  text-align: center;
+}
+.success
+{
+  color:green;
+  text-align: center;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+table td , table th{
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+strong
+{
+  color: orange;
+  padding: 5px;
+
+}
+i{
+  color: blueviolet;
+  padding: 5px;
+}*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f5f5f5; 
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+
+.heading {
+  background-color: #3498db; 
+  color: white; 
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.heading h1 {
+  margin: 0;
+}
+
+/* Center the main content */
+.contai {
+  width: 100%;
+  max-width: 100%; /* Take full width of the window */
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light gray content background */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+  position: relative; /* Add position relative for absolute positioning */
+}
+
+img {
+  width: 300px;
+  height: 200px;
+}
+.navi {
+  width: 220px; /* Adjust the sidebar width as needed */
+  background-color: #f0e68c; /* Light yellow sidebar background */
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 100%; /* Fill the entire height of the .contai */
+}
+
+/* Style the main content area */
+.wrap {
+  width: calc(100% - 240px); /* Adjust the width considering the sidebar */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f9f9f9; /* Light gray content background */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Slight box shadow */
+  float: right; /* Float the wrap element to the right */
+}
+
+/* Style links */
+a {
+  color: #3498db; /* Blue link color */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2980b9; /* Darker blue on hover */
+}
+
+/* Style form elements */
+label {
+  display: block;
+  margin-top: 10px; /* Increased margin for spacing */
+}
+/* Add padding to the button from the top */
+input, select, textarea {
+  width: 50%; /* Set the width to 100% to make each element full width */
+  padding: 10px;
+  margin-top: 10px; /* Add margin to separate each element */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Include padding and border in width calculation */
+  display: block; /* Make each element a block-level element */
+}
+button[type="submit"]
+{
+  width: 10%;
+  padding: 10px;
+  margin-top: 10px; /* Add margin to separate each element */
+  margin-left: 20%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Include padding and border in width calculation */
+  display: block;
+
+}
+
+/* Style table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+/* Add some spacing to paragraphs */
+p {
+  margin: 20px 0;
+}
+
+/* Style success and error messages */
+.success, .error {
+  padding: 10px;
+  text-align: center;
+}
+
+.success {
+  color: #27ae60; /* Green success message */
+}
+
+.error {
+  color: #c0392b; /* Red error message */
+}
+
+/* Position the copyright notice at the bottom */
+.foot {
+  position: fixed; /* Change to fixed */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: antiquewhite;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Center the copyright text */
+.foot p {
+  margin: 0;
+}
+
+.c{
+  display: flex;
+}
